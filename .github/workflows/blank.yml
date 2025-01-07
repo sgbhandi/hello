@@ -10,6 +10,8 @@ jobs:
           mkdir -p "${{ runner.tool_cache }}"
       - name: black-duck-security-scan
         uses: blackduck-inc/black-duck-security-scan@v2.0.0
+        with:
+          coverity_url: test.cov.com
       - name: Archive tool cache
         run: |
           cd "${{ runner.tool_cache }}"
