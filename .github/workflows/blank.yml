@@ -11,9 +11,9 @@ jobs:
       - name: black-duck-security-scan
         uses: blackduck-inc/black-duck-security-scan@v2.0.0
         with:
-          coverity_url: coverity7.cec.lab.emc.com
-          coverity_user: bhands5
-          coverity_passphrase: ${{ secrets.COVERITY_PASSPHRASE }}
+          coverity_url: test.com
+          coverity_user: sgbhandi
+          coverity_passphrase: sgbhandi
           coverity_project_name: DRP-Test
           coverity_stream_name: ViClient-drp-1.0
           coverity_policy_view: 'Outstanding Issues'
