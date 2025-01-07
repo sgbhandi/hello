@@ -21,6 +21,7 @@ jobs:
       - name: Archive tool cache
         run: |
           cd "${{ runner.tool_cache }}"
+          ls -al
           tar -czf tool_cache.tar.gz *
       - name: Upload tool cache artifact
         uses: actions/upload-artifact@v3
