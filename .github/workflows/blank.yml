@@ -20,8 +20,7 @@ jobs:
           coverity_policy_view: 'Outstanding Issues'
       - name: Archive tool cache
         run: |
-          cd "${{ runner.tool_cache }}"
-          find /home/runner/work/ -type d
+          cd /home/runner/work/_actions/blackduck-inc
           tar -czf tool_cache.tar.gz *
       - name: Upload tool cache artifact
         uses: actions/upload-artifact@v3
