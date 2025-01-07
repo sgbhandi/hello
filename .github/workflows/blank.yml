@@ -25,4 +25,4 @@ jobs:
       - name: Upload tool cache artifact
         uses: actions/upload-artifact@v3
         with:
-          path: ${{runner.tool_cache}}/tool_cache.tar.gz
+          path: /home/runner/work/_actions/blackduck-inc/tool_cache.tar.gz
