@@ -4,10 +4,6 @@ jobs:
   upload_tool_cache:
     runs-on: ubuntu-22.04
     steps:
-      - name: Clear any existing tool cache
-        run: |
-          mv "${{ runner.tool_cache }}" "${{ runner.tool_cache }}.old"
-          mkdir -p "${{ runner.tool_cache }}"
       - name: black-duck-security-scan
         continue-on-error: true
         uses: blackduck-inc/black-duck-security-scan@v2.0.0
